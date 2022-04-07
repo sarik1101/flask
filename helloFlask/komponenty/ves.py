@@ -3,7 +3,9 @@
 import string
 import random
 from gettext import install
-import os.path
+
+
+
 #subor = input("Zadaj názov súboru: ")
 
 #if os.path.isfile(subor):
