@@ -261,32 +261,17 @@ def render_ves(subor, im):
         if pozicia[0] == "VES":
 
           #-------------------------------konvertovanie-----------------------------
-          width= int(pozicia[2])
-          height = int(pozicia[3])
-          zmena = input(f"Chceš zmeniť veľkosť obrázka? aktuálna veľkosť je {pozicia[2]}:{pozicia[3]}. ZADAJ A/N ").upper()
-
-          if zmena == "A":
-            rozmery = input(f"Zadaj požadovanú veľkosť vo fomáte X:Y, zachovaj pomer {pozicia[2]}:{pozicia[3]}! ")
-            output_width, output_height = rozmery.split(":")
-            output_width = int(output_width)
-            output_height = int(output_height)
-          elif zmena == "N":
-            output_width= int(pozicia[2])
-            output_height = int(pozicia[3])
-            
-            
-          else:
-            output_width= int(pozicia[2])
-            output_height = int(pozicia[3])
+          width= 800
+          height = 800
+          output_width = 800
+          output_height = 800
+         
     
           
-          if zmena == "N": 
-           im = Image.new("RGB", (width, height), (255, 255, 255)) 
-          elif zmena == "A":
-           im = Image.new("RGB", (output_width, output_height),  (255, 255, 255)) 
-          else:
-           im = Image.new("RGB", (width, height), (255, 255, 255)) 
+        
+          im = Image.new("RGB", (width, height), (255, 255, 255)) 
           
+
 
 
         elif pozicia[0] == "CLEAR":
