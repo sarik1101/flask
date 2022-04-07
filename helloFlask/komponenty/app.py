@@ -2,7 +2,7 @@ from distutils.log import debug
 from unicodedata import name
 from PIL import Image
 from random import randint
-from flask import Flask, send_file, request, redirect, url_for, render_template
+from flask import Flask, send_file, request, redirect, url_for, render_template, send_from_directory
 from io import BytesIO
 app = Flask(__name__)
 
