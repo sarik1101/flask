@@ -233,9 +233,11 @@ def convert_point(width, height, output_width, output_height, X):
 #------------citanie suboru----------------
 
  
-def citanie_suboru(subor, im):
+def render_ves(subor, im):
   
-  
+  with open("ves.txt", "w") as f:
+    f.write(subor)
+    
   with open(str(subor), "r") as f:
     prikazy = ["CLEAR", "CIRCLE", "FILL_CIRCLE", "TRIANGLE", "LINE", "FILL_TRIANGLE", "RECT", "FILL_RECT"]
 
